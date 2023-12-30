@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Need to let something go?</title>
+  </head>
+  <body>
+    <div class="paper-container">
+      <p id="instructions">
+        Welcome.
+        <br />
+        You are free to write whatever it is that you want to let go of. It
+        could be anything at all. When you are finished, click the envelope to
+        put your message inside.
+      </p>
+      <textarea
+        id="letGoText"
+        placeholder="Write down what you want to let go of..."
+      ></textarea>
+      <img id="open-env" src="OpenEnv.png" alt="" onclick="toggleEnvelope()" />
+      <div id="envelope" class="hidden">
+        <div class="envelope-content">
+          <img id="closed-env" src="ClosedEnv.png" alt="" />
+          <div id="overlay-text" class="hidden">
+            <p>Click once more to let it go</p>
+          </div>
+        </div>
+      </div>
+      <div id="positiveMessage" class="hidden">
+        <p class="message">
+          Dear Friend,
+          <br />
+          I hope this message finds you in a moment of peace and self-discovery.
+          <br />
+          I wanted to take a moment to express my deep admiration and pride for
+          the courageous step you've taken in letting go of whatever you've
+          written. Acknowledging and releasing thoughts, emotions, or
+          experiences can be an incredibly empowering and validating process.
+          <br />
+          It takes strength to confront our own narratives, and your decision to
+          let go reflects a profound commitment to your own well-being and
+          growth. <br />
+          Always remember that your feelings are valid, your experiences are
+          real, and you are worthy of love and understanding. Embracing change,
+          even when it's challenging, is a testament to your resilience and
+          inner strength.
+          <br />
+          You are not alone on this journey, and your courage inspires those
+          around you. <br />
+          Sending you warmth, positivity, and a reminder that you are loved.
+          <br />
+          With admiration, Retailescapeartist
+        </p>
+        <button class="reset" onclick="reset()">
+          Have more to let go? Start Again.
+        </button>
+      </div>
+      <img
+        src="/joshua-woroniecki-hXGugpD1dLs-unsplash.jpg"
+        alt=""
+        class="image"
+        id="hiddenImage"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
